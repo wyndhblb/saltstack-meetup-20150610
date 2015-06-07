@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>It's all about the name</title>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <style>
+      
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+        
+      body{
+         font-family: 'Open Sans'; 
+         color: #ddd;
+      }
+      img{
+      width:auto;
+      align:middle;
+      vertical-align:middle;
+      max-width:100%;
+      max-height:100% !important;
+      }
+      #m-header{
+        position:absolute;
+        top:10px;
+        left: 10%;
+        z-index:9999;
+        vertical-align:middle;
+        line-height: 5px;
+        font-size:30px;
+      }
+      #m-header img{ height:50px; }
+      #m-footer{
+        position:absolute;
+        bottom: 1.7em;
+        right: 20%;
+        z-index:9999;
+        color: rgba(255,255,255,0.2);
+        
+      }
+      #m-footer img{ height:20px; opacity:.5; vertical-align: middle ;}
+      h1, h2, h3 {
+        font-family: 'Open Sans';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Lato'; }
+      code,pre {
+          padding: 2px 4px;
+          font-size: 90%;
+          color: #c7254e;
+          background-color: #f9f2f4;          
+          border-radius: 4px;
+      }
+      code { white-space: nowrap; }
+      .large{
+        font-size:30px;
+      }
+      .center{ text-align:center; }
+      .remark-code {
+        text-align:left;
+      }
+      .remark-slide-content{
+         background-color: #333;
+      }
+      .dim{ opacity: 0.3; }
+      .p-dim{ opacity: 0.5; }
+      .bolded{ font-weight: bold; }
+      .fit-height img{
+            height:500px !important;
+            width:auto !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="m-header"><img src="mfp-logo.png"> + <img src="salt_white.png"></div>
+    <script src="remark-latest.min.js"></script>
+    <script>
+     var slideshow = remark.create({
+      sourceUrl: 'slides.md'
+    });
+    </script>
+    <div id="m-footer">&copy; bo blanton <img src="uacf-square.png">  - Saltstack meetup 2015/06/10</div>
+  </body>
+</html>
